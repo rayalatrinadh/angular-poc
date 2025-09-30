@@ -1,8 +1,9 @@
-<p>user works!</p>
-
 <div>
     <button>
-        <img />
-        <span>Name</span>
+        <img 
+        [src] = "'assets/users/' + selectedUser.avatar" 
+        [alt] = "selectedUser.name"
+        />
+        <span>{{ selectedUser.name }}</span>
     </button>
 </div>

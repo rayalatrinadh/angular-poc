@@ -1,33 +1,40 @@
 export const DUMMY_USERS = [
   {
     id: 'u1',
-    name: 'Trinadh',
-    //avatar: 'user-1.jpg',
+    name: 'Trinadh Rayala',
+    avatar: 'user-1.jpg',
   },
   {
     id: 'u2',
-    name: 'Emily Thompson',
-    //avatar: 'user-2.jpg',
+    name: 'Trinadh Rayala 2',
+    avatar: 'user-2.jpg',
   },
   {
     id: 'u3',
-    name: 'Marcus Johnson',
-    //avatar: 'user-3.jpg',
+    name: 'Trinadh Rayala 3',
+    avatar: 'user-3.jpg',
   },
   {
     id: 'u4',
-    name: 'David Miller',
-    //avatar: 'user-4.jpg',
+    name: 'Trinadh Rayala 4',
+    avatar: 'user-4.jpg',
   },
   {
     id: 'u5',
-    name: 'Priya Patel',
-    //avatar: 'user-5.jpg',
+    name: 'Trinadh Rayala 5',
+    avatar: 'user-5.jpg',
   },
   {
     id: 'u6',
-    name: 'Arjun Singh',
-    //avatar: 'user-6.jpg',
+    name: 'Trinadh Rayala 6',
+    avatar: 'user-6.jpg',
   },
+  {
+    id: 'u7',
+    name: 'Trinadh Rayala 7',
+    avatar: 'user-7.jpg',
+  },
+  
+
 ];
  
