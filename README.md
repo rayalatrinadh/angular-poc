@@ -57,3 +57,10 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+<!-- //-------------Trinadh Notes--------- -->
+<!-- 
+October 18th 2025 : 
+1. In Angular 15+ standalone components, Angular does not automatically include directives like NgIf, NgFor, etc. You have to explicitly import what you use.
+2.
+1. -->
