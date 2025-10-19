@@ -61,6 +61,6 @@ For more information on using the Angular CLI, including detailed command refere
 <!-- //-------------Trinadh Notes--------- -->
 <!-- 
 October 18th 2025 : 
-1. In Angular 15+ standalone components, Angular does not automatically include directives like NgIf, NgFor, etc. You have to explicitly import what you use.
+1. In Angular 15+ standalone components, Angular does not automatically include directives like NgIf, NgFor, etc. You have to explicitly import what you use. we can import (NgForOf (or CommonModule) in your component.)
 2.
 1. -->
