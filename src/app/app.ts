@@ -7,10 +7,10 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  //imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet,Header, User, ObservableDemo],
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [Header, User, ObservableDemo]
 })
 export class App {
   protected readonly title = signal('angular-poc');
