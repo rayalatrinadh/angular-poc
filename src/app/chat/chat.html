@@ -1,0 +1,17 @@
+<div class="chat-box">
+  <h2>---in chat.html</h2>
+    <h2>💬 WebSocket Chat</h2>
+  
+    <div class="form">
+      <input [(ngModel)]="from" placeholder="Your name" />
+      <input [(ngModel)]="text" placeholder="Type a message..." />
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  
+    <ul class="messages">
+      <li *ngFor="let msg of messages">
+        <strong>{{ msg.from }}:</strong> {{ msg.text }}
+      </li>
+    </ul>
+  </div>
+  

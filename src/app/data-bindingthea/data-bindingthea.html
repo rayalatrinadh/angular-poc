@@ -1,0 +1,25 @@
+
+<h2>---in databindingthea.html</h2>
+<table>
+    <tr>
+        personName
+    </tr>
+    <td>
+        {{personName}}
+    </td>
+
+</table>
+
+<div>
+    <input type = "text" [value] = "personName" />
+</div>
+
+<p>two-way binding example</p>
+<input type = "text" [(ngModel)] = "personName" />
+<br>
+
+<p>----</p>
+<div>
+<input #nameBox  type = "text" value = "enter your name" /> 
+<button (click) = "changePersonName(nameBox.value)">onClickToChangePersonName</button>
+</div>
