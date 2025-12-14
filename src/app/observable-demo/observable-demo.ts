@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
-import { NgForOf } from '@angular/common'; 
+import { Component, signal } from '@angular/core';
+// import { NgForOf } from '@angular/common'; 
 import { interval, Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-observable-demo',
-  imports: [NgForOf],
+  standalone: true,
   templateUrl: './observable-demo.html',
   styleUrl: './observable-demo.css'
 })
 export class ObservableDemo {
   data : any[] = [];
+
+ 
 
   //  subscription!: Subscription;
 
@@ -44,7 +46,6 @@ export class ObservableDemo {
 
 
 getAsyncData(){
-//alert("get asyncData");
 this.myObservable.subscribe((val : any) => {
   this.data.push(val);
 });

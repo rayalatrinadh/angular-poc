@@ -64,3 +64,9 @@ October 18th 2025 :
 1. In Angular 15+ standalone components, Angular does not automatically include directives like NgIf, NgFor, etc. You have to explicitly import what you use. we can import (NgForOf (or CommonModule) in your component.)
 2.
 1. -->
+
+Anuglar 21 -> standAlone
+
+
+path directs:
+root : http://localhost:4200/
