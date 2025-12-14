@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-data-bindingthea',
+  standalone:true,
   imports: [FormsModule],
   templateUrl: './data-bindingthea.html',
   styleUrl: './data-bindingthea.css',
