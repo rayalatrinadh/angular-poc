@@ -70,3 +70,5 @@ Anuglar 21 -> standAlone
 
 path directs:
 root : http://localhost:4200/
+
+http://localhost:4200/databinding
