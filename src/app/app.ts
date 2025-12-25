@@ -14,4 +14,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('angular-poc');
+
+
+  buttonClick(){
+    console.log("button clicked");
+  }
+  keyEnter(event : any){
+    console.log(event.keyCode);
+  }
 }
