@@ -22,4 +22,13 @@ export class App {
   keyEnter(event : any){
     console.log(event.keyCode);
   }
+
+  keyEnterFilter(event : any){
+    console.log(event.keyCode);
+  }
+
+  getUserText(htmlUserInput : HTMLInputElement){
+    console.log(htmlUserInput.value);
+    console.log(htmlUserInput.id);
+  }
 }

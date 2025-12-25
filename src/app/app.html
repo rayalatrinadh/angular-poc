@@ -22,6 +22,14 @@
 
 
  <input type = "text" (keyup)= "keyEnter($event)">
+ <p>event filter</p>
+ 
+
+ <input type = "text" (keyup.enter) = "keyEnterFilter($event)">
+
+ <p>user Input Text</p>
+
+ <input type = "text" (keyup.enter) = "getUserText(htmlUserInput)" #htmlUserInput id="userText">
 
 
  <!-- <p>Trinadh</p> -->
