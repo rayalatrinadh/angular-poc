@@ -1,5 +1,15 @@
 <p>data-binding works!</p>
 
 
+
+<!-- string Interpolation -->
 <p>{{userNameTrinadh}}</p>
-<input type = "text"  [value] = userNameTrinadh #tempHtmlVariableToHoldUserData (keyup.enter)="getUserEnteredData(tempHtmlVariableToHoldUserData)">
+
+<!-- old way of data binding -->
+<!-- <input type = "text"  [value] = userNameTrinadh #tempHtmlVariableToHoldUserData (keyup.enter)="getUserEnteredData(tempHtmlVariableToHoldUserData)"> -->
+
+
+<!-- new way of data-binding using ngModel -->
+ 
+
+<input type = "text" [(ngModel)] ="userNameTrinadh">

@@ -72,3 +72,24 @@ path directs:
 root : http://localhost:4200/
 
 http://localhost:4200/databinding
+
+
+2025 December 25th (Thrusday)
+1. Event Binding
+2. Event Filter 
+3. Two-way Event Binding
+ 3.1 Two-way Event Binding (new approach clean code)
+
+<!-- -------------------------------------------------- -->
+
+ ONE-WAY DATA BINDING
+
+# String Interpolation - {{title}}
+# Property Binding - [src]
+# Class Binding - [class.text-red]
+# Style Binding - [style.backgroundColor]
+
+TWO-WAY DATA BINDING
+# Two-way Binding -[(ngModel)] 
+# ngModel coms from FormsModule '@angular/forms;
+
