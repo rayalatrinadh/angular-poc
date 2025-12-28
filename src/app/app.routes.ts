@@ -5,7 +5,7 @@ import {DataBinding} from './data-binding/data-binding';
 
 
 export const routes: Routes = [
-    // { path: '', redirectTo: 'app', pathMatch: 'full' },
+    { path: '', redirectTo: 'app', pathMatch: 'full' },
     { path: 'observable', component: ObservableDemo},
     {path : 'signal', component: SignalDemo},
     {path : 'databinding', component : DataBinding},
