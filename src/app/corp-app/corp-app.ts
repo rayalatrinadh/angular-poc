@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-corp-app',
@@ -8,6 +8,12 @@ import { Component, Input } from '@angular/core';
 })
 export class CorpApp {
 
-  @Input() messageFromApp : String = '';
+  // messageFromApp : String = 't';
+
+  testDataFromCorp : String = 'test';
+
+  test1DataFromCorp01 : String = 'data test from corp';
+
+  messageToAppFromCorp : String = "Message to app from corp";
 
 }

@@ -72,6 +72,7 @@ path directs:
 root : http://localhost:4200/
 
 http://localhost:4200/databinding
+http://localhost:4200/corp
 
 
 2025 December 25th (Thrusday)
@@ -93,3 +94,19 @@ TWO-WAY DATA BINDING
 # Two-way Binding -[(ngModel)] 
 # ngModel coms from FormsModule '@angular/forms;
 
+2025 Dec 28th, Sunday
+
+1. Scenario : in parent constructor the child value is not invoking/printing, because the child component is not initialized while initializing parent app.
+
+so, to overcome this, life cycle hook implements AfterViewInit and read it from ngAfterViewInit()
+
+# Lifecycle hooks
+1. AfterViewInit, need ngAfterViewInit(), @ViewChild(CorpApp) messageToAppFromCorp : String = ' ';
+
+
+# Decorators
+1. @Input() -> data flow from parent to child(@Input);
+
+
+# My Observations
+1. @ViewChild(CorpApp), why all the fields loading in app 

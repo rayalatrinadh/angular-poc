@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { AfterViewInit, Component, signal, ViewChild } from '@angular/core';
 import { Header } from "./header/header";
 import { User } from "./user/user";
 // import { ObservableDemo } from './observable-demo/observable-demo';
@@ -14,13 +14,25 @@ import {MuniApp} from './muni-app/muni-app';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
+export class App implements AfterViewInit{
   protected readonly title = signal('angular-poc');
 
   msgToCorp : String = "Hello Corp, How are you! from app";
 
   msgToMuni : String = "Hello Muni, How are you!, From app to muni";
 
+  @ViewChild(CorpApp) messageToAppFromCorp : String = ' ';
+
+  
+  constructor(){
+    console.log('---- in app constructor');
+    console.log(this.messageToAppFromCorp);
+  }
+
+  ngAfterViewInit(): void {
+    console.log('---- in app ngAfterViewInit constructor');
+    console.log(this.messageToAppFromCorp);
+  }
 
   buttonClick(){
     console.log("button clicked");
