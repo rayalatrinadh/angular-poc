@@ -73,7 +73,7 @@ root : http://localhost:4200/
 
 http://localhost:4200/databinding
 http://localhost:4200/corp
-
+http://localhost:4200/muni
 
 2025 December 25th (Thrusday)
 1. Event Binding
@@ -106,7 +106,11 @@ so, to overcome this, life cycle hook implements AfterViewInit and read it from 
 
 # Decorators
 1. @Input() -> data flow from parent to child(@Input);
+2. @Output(), EventEmitter -> data flow from child to parent(@Output);
 
 
 # My Observations
 1. @ViewChild(CorpApp), why all the fields loading in app 
+ Ans : the behaviour of @ViewChild was designed to send all the child parameters. Yes, the perofrmance might me slow, so they introduced @output, EventEmitter for sending the data from the child component to parent component.
+
+

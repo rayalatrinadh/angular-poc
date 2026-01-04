@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-muni-app',
@@ -9,5 +9,9 @@ import { Component, Input } from '@angular/core';
 export class MuniApp {
 
   @Input() messageFromAppToMuni : String = '';
+
+  @Output() muniMessage : String = 'I am in Muni, How are you';
+
+  @Output() someEvent = new EventEmitter();
 
 }

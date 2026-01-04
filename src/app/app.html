@@ -18,11 +18,18 @@
 
  <!-- <p>Trinadh</p> -->
 
- <p>hello app from trinadh rayala</p>
+ <!-- <p>hello app from trinadh rayala</p> -->
     <!-- <p>{{messageToAppFromCorp}} </p> -->
 
+    <!-- <button (click)="receiveFromMuni()"> click to muni child data</button> -->
 
- <app-corp-app></app-corp-app>
+
+ <!-- <app-corp-app></app-corp-app> -->
+
+ <app-muni-app (someEvent)="someFunction($event)"> </app-muni-app>
+
+ <p>{{mesgFromMuni}}</p>
+ <p>above message from muni in app</p>
 
  <!-- app-muni-app [messageFromAppToMuni]="msgToMuni"></app-muni-app> -->
  <router-outlet></router-outlet>

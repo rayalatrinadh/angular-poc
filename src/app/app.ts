@@ -21,6 +21,8 @@ export class App implements AfterViewInit{
 
   msgToMuni : String = "Hello Muni, How are you!, From app to muni";
 
+  mesgFromMuni : String = '';
+
   @ViewChild(CorpApp) messageToAppFromCorp : String = ' ';
 
   
@@ -48,6 +50,14 @@ export class App implements AfterViewInit{
   getUserText(htmlUserInput : HTMLInputElement){
     console.log(htmlUserInput.value);
     console.log(htmlUserInput.id);
+  }
+
+  receiveFromMuni(){
+    console.log('data yet to receive from muni');
+  }
+
+  someFunction(String : any){
+    console.log('some function() triggered in app.ts');
   }
 
   
