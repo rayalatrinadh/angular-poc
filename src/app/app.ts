@@ -14,51 +14,8 @@ import {MuniApp} from './muni-app/muni-app';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App implements AfterViewInit{
+export class App{
   protected readonly title = signal('angular-poc');
-
-  msgToCorp : String = "Hello Corp, How are you! from app";
-
-  msgToMuni : String = "Hello Muni, How are you!, From app to muni";
-
-  mesgFromMuni : String = '';
-
-  @ViewChild(CorpApp) messageToAppFromCorp : String = ' ';
-
-  
-  constructor(){
-    console.log('---- in app constructor');
-    console.log(this.messageToAppFromCorp);
-  }
-
-  ngAfterViewInit(): void {
-    console.log('---- in app ngAfterViewInit constructor');
-    console.log(this.messageToAppFromCorp);
-  }
-
-  buttonClick(){
-    console.log("button clicked");
-  }
-  keyEnter(event : any){
-    console.log(event.keyCode);
-  }
-
-  keyEnterFilter(event : any){
-    console.log(event.keyCode);
-  }
-
-  getUserText(htmlUserInput : HTMLInputElement){
-    console.log(htmlUserInput.value);
-    console.log(htmlUserInput.id);
-  }
-
-  receiveFromMuni(){
-    console.log('data yet to receive from muni');
-  }
-
-  someFunction(String : any){
-    console.log('some function() triggered in app.ts');
-  }
 
   
 }
